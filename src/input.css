@@ -7,7 +7,7 @@
 	--color-primary-dark: oklch(0.5121 0.205 260.13);
 	--color-primary-light: oklch(1 0 0);
 	--bg-main: oklch(1 0 0);
-	--bg-surface: oklch(1 0 0);
+	--bg-surface: var(--color-neutral-200);
 	--bg-inverse: oklch(0.2241 0.006 236.83);
 	--text-primary: var(--color-neutral-900);
 	--text-secondary: var(--color-neutral-700);
