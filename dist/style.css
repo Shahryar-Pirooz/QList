@@ -6,6 +6,7 @@
     --font-sans: 'Vazirmatn', sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-neutral-100: oklch(97% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
@@ -415,6 +416,9 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -446,6 +450,9 @@
   }
   .fill-neutral-200 {
     fill: var(--color-neutral-200);
+  }
+  .fill-text {
+    fill: var(--color-text);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -505,6 +512,9 @@
   }
   .text-slate-800 {
     color: var(--color-slate-800);
+  }
+  .text-text {
+    color: var(--color-text);
   }
   .opacity-50 {
     opacity: 50%;
