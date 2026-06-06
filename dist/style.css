@@ -7,6 +7,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-900: oklch(39.6% 0.141 25.723);
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-neutral-100: oklch(97% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
@@ -228,6 +230,9 @@
   .-right-1\/2 {
     right: calc(calc(1 / 2 * 100%) * -1);
   }
+  .-right-36 {
+    right: calc(var(--spacing) * -36);
+  }
   .right-2 {
     right: calc(var(--spacing) * 2);
   }
@@ -236,6 +241,27 @@
   }
   .-left-1\/2 {
     left: calc(calc(1 / 2 * 100%) * -1);
+  }
+  .-left-1\/3 {
+    left: calc(calc(1 / 3 * 100%) * -1);
+  }
+  .-left-10 {
+    left: calc(var(--spacing) * -10);
+  }
+  .-left-12 {
+    left: calc(var(--spacing) * -12);
+  }
+  .-left-15 {
+    left: calc(var(--spacing) * -15);
+  }
+  .-left-16 {
+    left: calc(var(--spacing) * -16);
+  }
+  .-left-36 {
+    left: calc(var(--spacing) * -36);
+  }
+  .left-1\/2 {
+    left: calc(1 / 2 * 100%);
   }
   .left-2 {
     left: calc(var(--spacing) * 2);
@@ -450,6 +476,15 @@
   }
   .fill-neutral-200 {
     fill: var(--color-neutral-200);
+  }
+  .fill-red-400 {
+    fill: var(--color-red-400);
+  }
+  .fill-red-900 {
+    fill: var(--color-red-900);
+  }
+  .fill-surface {
+    fill: var(--color-surface);
   }
   .fill-text {
     fill: var(--color-text);
