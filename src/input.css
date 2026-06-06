@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 @import '../assets/fonts/fonts.css';
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 :root {
 	--color-primary: oklch(0.6119 0.1988 258.86);
 	--color-primary-dark: oklch(0.5121 0.205 260.13);

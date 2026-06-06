@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html data-theme="light" lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -50,7 +50,7 @@
         </nav>
     </header>
     <main class="mx-auto container overflow-x-hidden">
-        <section class="flex flex-col justify-between px-3 space-y-8 bg-linear-to-b from-neutral-100 max-h-screen ">
+        <section class="flex flex-col justify-between px-3 space-y-8 bg-linear-to-b from-background to-surface max-h-screen ">
             <div class="relative flex flex-col space-y-3 min-h-40 py-14 justify-center items-center w-full">
                  <svg class="fill-neutral-200 opacity-50 absolute -z-10 -left-1/2 top-0" height="288" width="288" xmlns="http://www.w3.org/2000/svg">
                      <circle r="140" cx="140" cy="140"/>
@@ -69,9 +69,8 @@
                 <button class="flex-1 cursor-pointer bg-neutral-200 text-nowrap  text-primary  rounded-md py-2 px-6">درباره ما</button>
             </div>
             <div class="mx-auto">
-                <!-- todo: fix dark mode -->
-                <img class="block data-[theme=dark]:hidden" src="assets/images/app-web-light.png" alt="web app preview">
-                <img class="hidden data-[theme=dark]:block" src="assets/images/app-web-dark.png" alt="web app preview">
+                <img class="block dark:hidden" src="assets/images/app-web-light.png" alt="web app preview">
+                <img class="hidden dark:block" src="assets/images/app-web-dark.png" alt="web app preview">
             </div>
         </section>    
         </main>
