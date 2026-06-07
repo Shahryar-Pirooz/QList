@@ -43,5 +43,9 @@
 }
 
 html {
-	@apply text-text transition-colors duration-1000;
+	@apply text-text ;
+}
+
+::selection {
+	@apply bg-primary text-neutral-200;
 }

@@ -8,7 +8,7 @@
 </head>
 
 <body class="bg-background">
-    <header class="px-10 py-6 bg-background z-10 sticky top-0">
+    <header class="px-10 py-6 bg-background z-50 sticky top-0">
         <nav class="hidden lg:flex flex-row justify-between items-center">
             <div class="flex flex-row space-x-4 w-fit items-center">
                 <h1 class="font-semibold text-xl">کوئرا لیست</h1>
@@ -66,23 +66,32 @@
                 <circle r="140" cx="140" cy="140"/>
                 </svg> 
                 <img class="absolute top-2 right-2 animate-pulse lg:top-10 lg:right-1/4" src="/assets/icons/star.svg" alt="star">
-                <span class="text-2xl font-tanha lg:text-5xl">تمرکز رو وارد زندگیت کن </span>
-                <span class="text-3xl w-ful font-black relative after:content-[' '] after:absolute after:w-32 after:top-12 after:h-8 after:right-1/4 after:left-0 after:bg-contain after:bg-no-repeat after:bg-[url(/assets/icons/line.svg)] lg:text-7xl lg:after:w-full lg:after:top-24 lg:after:bg-center lg:after:right-10">به سمت اهدافت اوج بگیر</span>
+                <span class="z-10 text-2xl font-tanha lg:text-5xl">تمرکز رو وارد زندگیت کن </span>
+                <span class="z-10 text-3xl w-ful font-black relative after:content-[' '] after:absolute after:w-32 after:top-12 after:h-8 after:right-1/4 after:left-0 after:bg-contain after:bg-no-repeat after:bg-[url(/assets/icons/line.svg)] lg:text-7xl lg:after:w-full lg:after:top-24 lg:after:bg-center lg:after:right-10">به سمت اهدافت اوج بگیر</span>
                 <img class="absolute bottom-2 left-2 animate-pulse lg:bottom-5 lg:left-1/6" src="/assets/icons/star.svg" alt="star">
             </div>
-            <span class="mx-auto text-center ">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. <br>با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</span>
+            <span class="z-10 mx-auto text-center text-neutral-700 dark:text-neutral-400">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. <br class="hidden md:block">با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</span>
             <div class="flex flex-row flex-nowrap w-full space-x-5 lg:w-fit lg:mx-auto">
-                <button class="flex-1 cursor-pointer bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود به اپلیکیشن</button>
-                <button class="flex-1 cursor-pointer bg-neutral-200 text-nowrap  text-primary  rounded-md py-2 px-6">درباره ما</button>
+                <button class="z-10 flex-1 cursor-pointer bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود به اپلیکیشن</button>
+                <button class="z-10 flex-1 cursor-pointer bg-neutral-200 text-nowrap  text-primary  rounded-md py-2 px-6">درباره ما</button>
             </div>
             <div class="mx-auto">
                 <img class="block dark:hidden" src="assets/images/app-web-light.png" alt="web app preview">
                 <img class="hidden dark:block" src="assets/images/app-web-dark.png" alt="web app preview">
             </div>
         </section> 
-        <section>
-
-        </section>  
+        <section class="flex flex-col w-full justify-center items-center text-center min-h-112.5 mt-32">
+            <div class="flex flex-col space-y-3">
+                <h2 class="text-4xl font-semibold">ویژگی‌های اپلیکیشن کوئرالیست</h2>
+                <span class="text-neutral-700 dark:text-neutral-400">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای <br class="hidden md:block"> بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.</span>
+            </div>
+            <div class="grid grid-cols-2 w-full justify-between items-center mt-10 mx-auto md:grid-cols-4">
+                <div class="flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/brush.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/brush-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><span class="text-lg font-bold text-nowrap">رابط کاربری جذاب</span><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
+                <div class="flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/category.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/category-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><span class="text-lg font-bold text-nowrap">قابلیت دسته‌بندی کارها</span><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
+                <div class="flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/location-tick.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/location-tick-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><span class="text-lg font-bold text-nowrap">دسترسی آسان</span><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
+                <div class="flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/user-tag.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/user-tag-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><span class="text-lg font-bold text-nowrap">پشتیبانی آنلاین</span><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
+            </div>
+        </section> 
         </main>
         <script src="/scripts/darkmode.js"></script>
 </body>
