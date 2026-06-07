@@ -43,5 +43,5 @@
 }
 
 html {
-	@apply text-text;
+	@apply text-text transition-colors duration-1000;
 }

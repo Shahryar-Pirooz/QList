@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="dark" lang="fa" dir="rtl">
+<html data-theme="system" lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,14 @@
                 <button id="signin" class="flex-4 bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود
                     به
                     اپلیکیشن</button>
-                <img id="toggle-theme" class="flex-1 max-h-6" src="./assets/icons/toggle-theme.svg" alt="toggle-theme">
+                <img id="theme_btn" class="cursor-pointer flex-1 max-h-6" src="./assets/icons/toggle-theme.svg" alt="toggle-theme">
+            </div>
+            <div data-show="false" id="bg_menu" class="absolute z-10 hidden top-0 left-0 backdrop-blur-sm w-screen h-screen">
+                <div id="theme_menu"  class="flex-col rounded-lg shadow min-w-60 text-center space-y-8 absolute top-20 left-10 bg-background px-4 py-8">
+                <div><span id="theme_light" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت روشن</span></div>
+                <div><span id="theme_dark" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت خاموش</span></div>
+                <div><span id="theme_system" class="cursor-pointer w-full ">پیروی از سیستم</span></div>
+            </div>
             </div>
         </nav>
         <nav class="flex flex-row flex-nowrap justify-between items-center lg:hidden">
@@ -72,8 +79,12 @@
                 <img class="block dark:hidden" src="assets/images/app-web-light.png" alt="web app preview">
                 <img class="hidden dark:block" src="assets/images/app-web-dark.png" alt="web app preview">
             </div>
-        </section>    
+        </section> 
+        <section>
+
+        </section>  
         </main>
+        <script src="/scripts/darkmode.js"></script>
 </body>
 
 </html>
