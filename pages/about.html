@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="https://shahryar-pirooz.github.io/QList/dist/style.css">
     <title>About Us</title>
 </head>
+
 <body class="bg-background">
-     <header class="px-10 py-6 bg-background z-50 sticky top-0">
+    <header class="px-10 py-6 bg-background z-50 sticky top-0">
         <nav class="hidden lg:flex flex-row justify-between items-center">
             <div class="flex flex-row space-x-4 w-fit items-center">
                 <h1 class="font-semibold text-xl">کوئرا لیست</h1>
                 <ul class="flex flex-row items-center space-x-16 justify-around px-16">
-                    <li><a href="/index.html">صفخه اصلی</a></li>
-                    <li><a class="text-primary" href="/pages/about.html">درباره من</a></li>
-                    <li><a href="/pages/contact.html">ارتباط با من</a></li>
+                    <li><a href="https://shahryar-pirooz.github.io/QList/index.html">صفخه اصلی</a></li>
+                    <li><a class="text-primary" href="https://shahryar-pirooz.github.io/QList/pages/about.html">درباره
+                            من</a></li>
+                    <li><a href="https://shahryar-pirooz.github.io/QList/pages/contact.html">ارتباط با من</a></li>
                 </ul>
             </div>
             <div class="flex flex-row w-fit justify-between space-x-4 items-center">
                 <button id="signin" class="flex-4 bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود
                     به
                     اپلیکیشن</button>
-                <img id="theme_btn" class="cursor-pointer flex-1 max-h-6" src="/assets/icons/toggle-theme.svg" alt="toggle-theme">
+                <img id="theme_btn" class="cursor-pointer flex-1 max-h-6" src="/assets/icons/toggle-theme.svg"
+                    alt="toggle-theme">
             </div>
-            <div data-show="false" id="bg_menu" class="absolute z-10 hidden top-0 left-0 backdrop-blur-sm w-screen h-screen">
-                <div id="theme_menu"  class="flex-col rounded-lg shadow min-w-60 text-center space-y-8 absolute top-20 left-10 bg-background px-4 py-8">
-                <div><span id="theme_light" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت روشن</span></div>
-                <div><span id="theme_dark" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت خاموش</span></div>
-                <div><span id="theme_system" class="cursor-pointer w-full ">پیروی از سیستم</span></div>
-            </div>
+            <div data-show="false" id="bg_menu"
+                class="absolute z-10 hidden top-0 left-0 backdrop-blur-sm w-screen h-screen">
+                <div id="theme_menu"
+                    class="flex-col rounded-lg shadow min-w-60 text-center space-y-8 absolute top-20 left-10 bg-background px-4 py-8">
+                    <div><span id="theme_light" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت
+                            روشن</span></div>
+                    <div><span id="theme_dark" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت
+                            خاموش</span></div>
+                    <div><span id="theme_system" class="cursor-pointer w-full ">پیروی از سیستم</span></div>
+                </div>
             </div>
         </nav>
         <nav class="flex flex-row flex-nowrap justify-between items-center lg:hidden">
             <div class="min-w-6 max-w-8">
-                <button
-                    id="mobile_menu"
+                <button id="mobile_menu"
                     class="group inline-flex w-12 h-12 text-text bg-background text-center items-center justify-center rounded transition"
-                    aria-pressed="false"
-                    data-opened="false"
+                    aria-pressed="false" data-opened="false"
                     onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
                     <span class="sr-only">Menu</span>
                     <svg class="w-6 h-6 fill-current pointer-events-none" viewBox="0 0 16 16"
@@ -56,44 +62,59 @@
             </div>
             <h1 class="font-semibold text-center w-full text-xl">کوئرا لیست</h1>
         </nav>
-         <div id="mobile_bg_menu" class="w-full h-full gird place-items-center hidden">
-                    <ul class="w-3/4  mx-auto flex flex-col shadow justify-center items-center space-y-16 bg-background rounded-lg py-8">
-                        <li class="hover:cursor-pointer"><a href="/index.html">صفخه اصلی</a></li>
-                        <li class="hover:cursor-pointer text-primary"><a href="/pages/about.html">درباره من</a></li>
-                        <li class="hover:cursor-pointer"><a href="/pages/contact.html">ارتباط با من</a></li>
-                        <li class="w-1/2 h-px bg-inverse"></li>
-                        <li id="mobile_theme_light" class="hover:cursor-pointer"><a href="#">حالت روشن</a></li>
-                        <li id="mobile_theme_dark" class="hover:cursor-pointer"><a href="#">حالت خاموش</a></li>
-                        <li id="mobile_theme_system" class="hover:cursor-pointer"><a href="#">پیروی از سیستم</a></li>
-                    </ul>
-                </div>
+        <div id="mobile_bg_menu" class="w-full h-full gird place-items-center hidden">
+            <ul
+                class="w-3/4  mx-auto flex flex-col shadow justify-center items-center space-y-16 bg-background rounded-lg py-8">
+                <li class="hover:cursor-pointer"><a href="https://shahryar-pirooz.github.io/QList/index.html">صفخه
+                        اصلی</a></li>
+                <li class="hover:cursor-pointer text-primary"><a
+                        href="https://shahryar-pirooz.github.io/QList/pages/about.html">درباره من</a></li>
+                <li class="hover:cursor-pointer"><a
+                        href="https://shahryar-pirooz.github.io/QList/pages/contact.html">ارتباط با من</a></li>
+                <li class="w-1/2 h-px bg-inverse"></li>
+                <li id="mobile_theme_light" class="hover:cursor-pointer"><a href="#">حالت روشن</a></li>
+                <li id="mobile_theme_dark" class="hover:cursor-pointer"><a href="#">حالت خاموش</a></li>
+                <li id="mobile_theme_system" class="hover:cursor-pointer"><a href="#">پیروی از سیستم</a></li>
+            </ul>
+        </div>
     </header>
-     <main class="mx-auto container overflow-hidden">
+    <main class="mx-auto container overflow-hidden">
         <div class="flex flex-col py-28 lg:px-8 justify-around items-center max-w-3/4 mx-auto lg:flex-row">
             <div class="flex-1 flex flex-col order-2 py-6 lg:order-1">
                 <div class="space-y-3 mb-6 flex flex-col">
                     <h1 class="text-center lg:text-start font-tanha text-5xl font-bold">درباره من</h1>
-                    <span class="text-center w-full lg:text-start text-neutral-700 dark:text-neutral-400 text-3xl">شهریار پیروز</span>
+                    <span
+                        class="text-center w-full lg:text-start text-neutral-700 dark:text-neutral-400 text-3xl">شهریار
+                        پیروز</span>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-center lg:text-justify">توسعه‌دهنده Frontend با تمرکز بر React و Next.js، دارای سابقه فعالیت در حوزه‌های مختلف IT، توسعه نرم‌افزار و زیرساخت. مسیر کاری من از پشتیبانی و شبکه آغاز شد و در ادامه به توسعه وب، برنامه‌نویسی Android و پروژه‌های Open-source گسترش پیدا کرد.</p>
-                    <p class="text-center lg:text-justify">در کنار توسعه رابط کاربری، با مفاهیم Backend، Linux و ساختار سیستم‌ها نیز آشنایی دارم و همین موضوع باعث شده نگاه فنی گسترده‌تری نسبت به فرایند توسعه نرم‌افزار داشته باشم.</p>
-                    <p class="text-center lg:text-justify">علاقه‌مند به یادگیری مستمر، کار تیمی و ساخت محصولاتی هستم که علاوه بر ظاهر مناسب، از نظر فنی نیز ساختار قابل اتکا و تجربه کاربری مناسبی داشته باشند.</p>
+                    <p class="text-center lg:text-justify">توسعه‌دهنده Frontend با تمرکز بر React و Next.js، دارای سابقه
+                        فعالیت در حوزه‌های مختلف IT، توسعه نرم‌افزار و زیرساخت. مسیر کاری من از پشتیبانی و شبکه آغاز شد
+                        و در ادامه به توسعه وب، برنامه‌نویسی Android و پروژه‌های Open-source گسترش پیدا کرد.</p>
+                    <p class="text-center lg:text-justify">در کنار توسعه رابط کاربری، با مفاهیم Backend، Linux و ساختار
+                        سیستم‌ها نیز آشنایی دارم و همین موضوع باعث شده نگاه فنی گسترده‌تری نسبت به فرایند توسعه
+                        نرم‌افزار داشته باشم.</p>
+                    <p class="text-center lg:text-justify">علاقه‌مند به یادگیری مستمر، کار تیمی و ساخت محصولاتی هستم که
+                        علاوه بر ظاهر مناسب، از نظر فنی نیز ساختار قابل اتکا و تجربه کاربری مناسبی داشته باشند.</p>
                 </div>
                 <div class="grid grid-cols-2 w-full pt-12 gap-2 lg:hidden">
-                    <div class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
+                    <div
+                        class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
                         <span class="font-tanha font-bold text-3xl">۱۳۷۱</span>
                         <span class="text-neutral-700 dark:text-neutral-400">سال تولد</span>
                     </div>
-                    <div class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
+                    <div
+                        class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
                         <span class="font-tanha font-bold text-3xl">تهران</span>
                         <span class="text-neutral-700 dark:text-neutral-400">محل زندگی</span>
                     </div>
-                    <div class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
+                    <div
+                        class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
                         <span class="font-tanha font-bold text-3xl">۵+</span>
                         <span class="text-neutral-700 dark:text-neutral-400">سال تجربه</span>
                     </div>
-                    <div class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
+                    <div
+                        class="flex flex-col border border-surface lg:bg-surface p-4 rounded-2xl lg:text-center lg:justify-center lg:items-center lg:px-8">
                         <span class="font-tanha font-bold text-3xl">۱۰+</span>
                         <span class="text-neutral-700 dark:text-neutral-400">مشارکت در پروژه</span>
                     </div>
@@ -122,31 +143,49 @@
             </div>
         </div>
     </main>
-        <footer class="lg:pt-32 flex flex-col py-8 px-2 lg:p-8">
-            <div class="flex flex-row justify-center items-center w-full mb-12 lg:mx-auto lg:w-1/2">
-                <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
-                <div class="flex-1 text-center ">کوئرا لیست</div>
-               <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
-            </div>
-            <div class="flex flex-col justify-around space-x-60 lg:px-40 lg:text-start lg:flex-row">
-                <div class="flex flex-row justify-center items-center lg:justify-start lg:items-start  w-full flex-nowrap space-y-6 order-2 lg:flex-col lg:order-1">
-                    <div class="flex-1 space-y-6 order-2 lg:order-1">
-                        <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden" src="/assets/icons/fax-mobile.svg" alt="fax"><img class="hidden dark:block" src="/assets/icons/fax-mobile-dark.svg" alt="fax"><a href="fax:02144445566">فکس:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
-                        <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden" src="/assets/icons/call-mobile.svg" alt="phone"><img class="hidden dark:block" src="/assets/icons/call-mobile-dark.svg" alt="phone"><a href="tel:02144445566">تلفن پشتیبانی:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
-                    </div>
-                    <div class="flex-1 flex flex-row justify-start items-center space-x-4 order-1 lg:order-2"><img class="block dark:hidden" src="/assets/icons/map-mobile.svg" alt="location"><img class="hidden dark:block" src="/assets/icons/map-mobile-dark.svg" alt="location"><a href="https://maps.app.goo.gl/zFqVTotciXwCykYK8">آدرس دفتر مرکزی:<br class="lg:hidden"> پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</a></div>
+    <footer class="lg:pt-32 flex flex-col py-8 px-2 lg:p-8">
+        <div class="flex flex-row justify-center items-center w-full mb-12 lg:mx-auto lg:w-1/2">
+            <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
+            <div class="flex-1 text-center ">کوئرا لیست</div>
+            <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
+        </div>
+        <div class="flex flex-col justify-around space-x-60 lg:px-40 lg:text-start lg:flex-row">
+            <div
+                class="flex flex-row justify-center items-center lg:justify-start lg:items-start  w-full flex-nowrap space-y-6 order-2 lg:flex-col lg:order-1">
+                <div class="flex-1 space-y-6 order-2 lg:order-1">
+                    <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden"
+                            src="/assets/icons/fax-mobile.svg" alt="fax"><img class="hidden dark:block"
+                            src="/assets/icons/fax-mobile-dark.svg" alt="fax"><a href="fax:02144445566">فکس:<br
+                                class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
+                    <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden"
+                            src="/assets/icons/call-mobile.svg" alt="phone"><img class="hidden dark:block"
+                            src="/assets/icons/call-mobile-dark.svg" alt="phone"><a href="tel:02144445566">تلفن
+                            پشتیبانی:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
                 </div>
-                <div class="flex flex-col flex-nowrap w-full space-y-8 order-1 lg:order-2">
-                    <div class="flex flex-col flex-nowrap space-y-4">
-                        <span class="font-bold">با ما در ارتباط باش</span>
-                        <span>اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</span></div>
-                    <div><div class=" my-8 border border-neutral-400 flex flex-row justify-between w-full p-1.5 rounded-lg transition-all duration-500  focus-within:border-primary focus-within:border-2 lg:w-fit"><input class="outline-0" type="text" placeholder="ایمیل"><button class="bg-primary text-nowrap  text-neutral-100  rounded-md py-1 px-3">ارسال</button></div></div>
+                <div class="flex-1 flex flex-row justify-start items-center space-x-4 order-1 lg:order-2"><img
+                        class="block dark:hidden" src="/assets/icons/map-mobile.svg" alt="location"><img
+                        class="hidden dark:block" src="/assets/icons/map-mobile-dark.svg" alt="location"><a
+                        href="https://maps.app.goo.gl/zFqVTotciXwCykYK8">آدرس دفتر مرکزی:<br class="lg:hidden"> پونک -
+                        خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</a></div>
+            </div>
+            <div class="flex flex-col flex-nowrap w-full space-y-8 order-1 lg:order-2">
+                <div class="flex flex-col flex-nowrap space-y-4">
+                    <span class="font-bold">با ما در ارتباط باش</span>
+                    <span>اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</span>
+                </div>
+                <div>
+                    <div
+                        class=" my-8 border border-neutral-400 flex flex-row justify-between w-full p-1.5 rounded-lg transition-all duration-500  focus-within:border-primary focus-within:border-2 lg:w-fit">
+                        <input class="outline-0" type="text" placeholder="ایمیل"><button
+                            class="bg-primary text-nowrap  text-neutral-100  rounded-md py-1 px-3">ارسال</button></div>
                 </div>
             </div>
-            <div></div>
-        </footer>
-        <script src="/scripts/init.js"></script>
-        <script src="/scripts/darkmode.js"></script>
-        <script src="/scripts/mobile.js"></script>
+        </div>
+        <div></div>
+    </footer>
+    <script src="/scripts/init.js"></script>
+    <script src="/scripts/darkmode.js"></script>
+    <script src="/scripts/mobile.js"></script>
 </body>
+
 </html>
