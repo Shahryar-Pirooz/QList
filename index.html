@@ -129,7 +129,7 @@
                 <h2 class="font-tanha text-4xl font-bold">نظرات کاربران</h2>
                 <span class="text-neutral-700 dark:text-neutral-400">بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.</span>
             </div>
-            <div class="flex flex-row flex-nowrap overflow-x-auto gap-6 mx-auto px-3 lg:grid lg:grid-cols-3 ">
+            <div class="flex flex-row flex-nowrap overflow-x-auto gap-6 mx-auto px-3 lg:grid lg:grid-cols-3 lg:max-w-2/3">
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user1.png" alt="users">
@@ -201,6 +201,29 @@
         </div>
         </section>
         </main>
+        <footer class="lg:pt-32 flex flex-col py-8 px-2 lg:p-8">
+            <div class="flex flex-row justify-center items-center w-full mb-12 lg:mx-auto lg:w-1/2">
+                <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
+                <div class="flex-1 text-center ">کوئرا لیست</div>
+               <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
+            </div>
+            <div class="flex flex-col justify-around space-x-60 lg:px-40 lg:text-start lg:flex-row">
+                <div class="flex flex-row justify-center items-center lg:justify-start lg:items-start  w-full flex-nowrap space-y-6 order-2 lg:flex-col lg:order-1">
+                    <div class="flex-1 space-y-6 order-2 lg:order-1">
+                        <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden" src="/assets/icons/fax-mobile.svg" alt="fax"><img class="hidden dark:block" src="/assets/icons/fax-mobile-dark.svg" alt="fax"><a href="fax:02144445566">فکس:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
+                        <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden" src="/assets/icons/call-mobile.svg" alt="phone"><img class="hidden dark:block" src="/assets/icons/call-mobile-dark.svg" alt="phone"><a href="tel:02144445566">تلفن پشتیبانی:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
+                    </div>
+                    <div class="flex-1 flex flex-row justify-start items-center space-x-4 order-1 lg:order-2"><img class="block dark:hidden" src="/assets/icons/map-mobile.svg" alt="location"><img class="hidden dark:block" src="/assets/icons/map-mobile-dark.svg" alt="location"><a href="https://maps.app.goo.gl/zFqVTotciXwCykYK8">آدرس دفتر مرکزی:<br class="lg:hidden"> پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</a></div>
+                </div>
+                <div class="flex flex-col flex-nowrap w-full space-y-8 order-1 lg:order-2">
+                    <div class="flex flex-col flex-nowrap space-y-4">
+                        <span class="font-bold">با ما در ارتباط باش</span>
+                        <span>اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</span></div>
+                    <div><div class=" my-8 border border-neutral-400 flex flex-row justify-between w-full p-1.5 rounded-lg transition-all duration-500  focus-within:border-primary focus-within:border-2 lg:w-fit"><input class="outline-0" type="text" placeholder="ایمیل"><button class="bg-primary text-nowrap  text-neutral-100  rounded-md py-1 px-3">ارسال</button></div></div>
+                </div>
+            </div>
+            <div></div>
+        </footer>
         <script src="/scripts/darkmode.js"></script>
 </body>
 
