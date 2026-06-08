@@ -36,6 +36,7 @@
     --font-weight-black: 900;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --blur-sm: 8px;
     --default-transition-duration: 150ms;
@@ -311,6 +312,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
@@ -353,6 +357,9 @@
   .max-h-6 {
     max-height: calc(var(--spacing) * 6);
   }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
+  }
   .max-h-screen {
     max-height: 100vh;
   }
@@ -388,6 +395,12 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-2\/3 {
+    max-width: calc(2 / 3 * 100%);
+  }
+  .max-w-3\/4 {
+    max-width: calc(3 / 4 * 100%);
   }
   .max-w-8 {
     max-width: calc(var(--spacing) * 8);
@@ -446,6 +459,9 @@
   .place-items-center {
     place-items: center;
   }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
   }
@@ -464,11 +480,17 @@
   .justify-items-center {
     justify-items: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .space-y-3 {
     :where(& > :not(:last-child)) {
@@ -549,6 +571,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -568,6 +593,9 @@
   }
   .border-neutral-400 {
     border-color: var(--color-neutral-400);
+  }
+  .border-surface {
+    border-color: var(--color-surface);
   }
   .bg-background {
     background-color: var(--color-background);
@@ -614,6 +642,12 @@
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -641,6 +675,12 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
@@ -656,6 +696,12 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-28 {
+    padding-block: calc(var(--spacing) * 28);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
@@ -664,6 +710,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-justify {
+    text-align: justify;
   }
   .font-tanha {
     font-family: var(--font-tanha);
@@ -679,6 +728,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -1033,9 +1086,19 @@
       flex-direction: row;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
   .lg\:justify-start {
@@ -1048,9 +1111,19 @@
       gap: calc(var(--spacing) * 6);
     }
   }
+  .lg\:bg-surface {
+    @media (width >= 64rem) {
+      background-color: var(--color-surface);
+    }
+  }
   .lg\:p-8 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .lg\:px-40 {
@@ -1061,6 +1134,16 @@
   .lg\:pt-32 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:text-center {
+    @media (width >= 64rem) {
+      text-align: center;
+    }
+  }
+  .lg\:text-justify {
+    @media (width >= 64rem) {
+      text-align: justify;
     }
   }
   .lg\:text-start {
