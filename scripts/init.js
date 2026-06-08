@@ -1,0 +1,12 @@
+const themeBtn = document.getElementById("theme_btn")
+const bg = document.getElementById("bg_menu")
+const html = document.getElementsByTagName("html")[0]
+const light = document.getElementById("theme_light")
+const dark = document.getElementById("theme_dark")
+const system = document.getElementById("theme_system")
+const mLight = document.getElementById("mobile_theme_light")
+const mDark = document.getElementById("mobile_theme_dark")
+const mSystem = document.getElementById("mobile_theme_system")
+const mobileMenu = document.getElementById("mobile_menu")
+const mobileBgMenu = document.getElementById("mobile_bg_menu")
+

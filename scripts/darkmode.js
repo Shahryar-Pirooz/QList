@@ -1,11 +1,3 @@
-const themeBtn = document.getElementById("theme_btn")
-const bg = document.getElementById("bg_menu")
-const html = document.getElementsByTagName("html")[0]
-const light = document.getElementById("theme_light")
-const dark = document.getElementById("theme_dark")
-const system = document.getElementById("theme_system")
-
-
 function setCookie(name, value, days) {
     const d = new Date()
     d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000))
