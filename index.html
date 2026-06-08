@@ -35,8 +35,10 @@
         <nav class="flex flex-row flex-nowrap justify-between items-center lg:hidden">
             <div class="min-w-6 max-w-8">
                 <button
+                    id="mobile_menu"
                     class="group inline-flex w-12 h-12 text-text bg-background text-center items-center justify-center rounded transition"
                     aria-pressed="false"
+                    data-opened="false"
                     onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
                     <span class="sr-only">Menu</span>
                     <svg class="w-6 h-6 fill-current pointer-events-none" viewBox="0 0 16 16"
@@ -55,6 +57,17 @@
             </div>
             <h1 class="font-semibold text-center w-full text-xl">کوئرا لیست</h1>
         </nav>
+         <div id="mobile_bg_menu" class="w-full h-full gird place-items-center hidden">
+                    <ul class="w-3/4  mx-auto flex flex-col shadow justify-center items-center space-y-16 bg-background rounded-lg py-8">
+                        <li class="hover:cursor-pointer"><a class="text-primary" href="/index.html">صفخه اصلی</a></li>
+                        <li class="hover:cursor-pointer"><a href="/pages/about.html">درباره ما</a></li>
+                        <li class="hover:cursor-pointer"><a href="/pages/contact.html">ارتباط با ما</a></li>
+                        <li class="w-1/2 h-px bg-inverse"></li>
+                        <li id="mobile_theme_light" class="hover:cursor-pointer"><a href="#">حالت روشن</a></li>
+                        <li id="mobile_theme_dark" class="hover:cursor-pointer"><a href="#">حالت خاموش</a></li>
+                        <li id="mobile_theme_system" class="hover:cursor-pointer"><a href="#">پیروی از سیستم</a></li>
+                    </ul>
+                </div>
     </header>
     <main class="mx-auto container overflow-hidden">
         <section class="pb-16 flex flex-col justify-between px-3 space-y-8 bg-linear-to-b from-surface to-background max-h-screen ">
@@ -225,6 +238,7 @@
             <div></div>
         </footer>
         <script src="/scripts/darkmode.js"></script>
+        <script src="/scripts/mobile.js"></script>
 </body>
 
 </html>
