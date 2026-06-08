@@ -21,3 +21,17 @@ mSystem.addEventListener("click" , function () {
    html.dataset.theme = systemTheme()
    setCookie("theme", "", -1)
 })
+
+chvLeft.addEventListener("click" , function () {
+    comments.scrollBy({
+    left: -200,
+    behavior: 'smooth'
+  });
+})
+
+chvRight.addEventListener("click",function () {
+    comments.scrollBy({
+    left: 200,
+    behavior: 'smooth'
+  });
+})

@@ -43,7 +43,7 @@
 }
 
 html {
-	@apply text-text ;
+	@apply text-text scroll-smooth;
 }
 
 button {

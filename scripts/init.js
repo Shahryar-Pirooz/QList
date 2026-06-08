@@ -9,4 +9,6 @@ const mDark = document.getElementById("mobile_theme_dark")
 const mSystem = document.getElementById("mobile_theme_system")
 const mobileMenu = document.getElementById("mobile_menu")
 const mobileBgMenu = document.getElementById("mobile_bg_menu")
-
+const comments = document.getElementById("comments")
+const chvRight = document.getElementById("chv_right")
+const chvLeft = document.getElementById("chv_left")
