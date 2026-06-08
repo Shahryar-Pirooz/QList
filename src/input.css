@@ -46,6 +46,10 @@ html {
 	@apply text-text ;
 }
 
+button {
+	@apply cursor-pointer transition-all duration-300 active:scale-80;
+}
+
 ::selection {
 	@apply bg-primary text-neutral-200;
 }
