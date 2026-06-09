@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/QList/dist/style.css">
     <title>About Me</title>
 </head>
 
@@ -14,9 +14,10 @@
             <div class="flex flex-row space-x-4 w-fit items-center">
                 <h1 class="font-semibold text-xl">کوئرا لیست</h1>
                 <ul class="flex flex-row items-center space-x-16 justify-around px-16">
-                    <li><a href="/index.html">صفخه اصلی</a></li>
-                    <li><a href="/pages/about.html">درباره من</a></li>
-                    <li><a class="text-primary" href="/pages/contact.html">ارتباط با من</a></li>
+                    <li><a href="/QList/index.html">صفخه اصلی</a></li>
+                    <li><a href="/QList/pages/about.html">درباره من</a></li>
+                    <li><a class="text-primary" href="/QList/pages/contact.html">ارتباط
+                            با من</a></li>
                 </ul>
             </div>
             <div class="flex flex-row w-fit justify-between space-x-4 items-center">
@@ -64,10 +65,11 @@
         <div id="mobile_bg_menu" class="w-full h-full gird place-items-center hidden">
             <ul
                 class="w-3/4  mx-auto flex flex-col shadow justify-center items-center space-y-16 bg-background rounded-lg py-8">
-                <li class="hover:cursor-pointer"><a href="/index.html">صفخه اصلی</a></li>
-                <li class="hover:cursor-pointer"><a href="/pages/about.html">درباره من</a></li>
-                <li class="hover:cursor-pointer text-primary"><a class="text-primary" href="/pages/contact.html">ارتباط
-                        با من</a></li>
+                <li class="hover:cursor-pointer"><a href="/QList/index.html">صفخه
+                        اصلی</a></li>
+                <li class="hover:cursor-pointer"><a href="/QList/pages/about.html">درباره من</a></li>
+                <li class="hover:cursor-pointer text-primary"><a class="text-primary"
+                        href="/QList/pages/contact.html">ارتباط با من</a></li>
                 <li class="w-1/2 h-px bg-inverse"></li>
                 <li id="mobile_theme_light" class="hover:cursor-pointer"><a href="#">حالت روشن</a></li>
                 <li id="mobile_theme_dark" class="hover:cursor-pointer"><a href="#">حالت خاموش</a></li>
@@ -75,130 +77,6 @@
             </ul>
         </div>
     </header>
-
-    <main class="container my-16 lg:my-28 mx-auto px-4 lg:px-0 lg:w-3/4">
-        <div class="flex flex-col lg:flex-row">
-
-            <div class="flex-1 lg:border-l border-surface mx-0 lg:mx-4 flex flex-col justify-between mb-10 lg:mb-0">
-
-                <div>
-                    <div
-                        class="flex flex-col space-y-3 mb-8 justify-center items-center text-center lg:justify-start lg:items-start lg:text-start">
-                        <h1 class="font-tanha font-bold text-4xl">تماس با من</h1>
-                        <p class="text-xl text-neutral-700 dark:text-neutral-400">چیزی هست که بخوای ازم بپرسی؟ خوشحال
-                            میشم بتونم بهت کمکی کنم.</p>
-                    </div>
-
-                    <div class="hidden flex-col space-y-6 lg:flex">
-                        <div class="flex flex-row space-x-2">
-                            <img class="block dark:hidden" src="/assets/icons/call-outline.svg" alt="call">
-                            <img class="hidden dark:block" src="/assets/icons/call-outline-dark.svg" alt="call">
-                            <a href="tel:+989128100902">۰۹۱۲۸۱۰۰۹۲۰</a>
-                        </div>
-                        <div class="flex flex-row space-x-2">
-                            <img class="block dark:hidden" src="/assets/icons/email-outline.svg" alt="email">
-                            <img class="hidden dark:block" src="/assets/icons/email-outline-dark.svg" alt="email">
-                            <a href="mailto:shahryar.pirooz@outlook.com">shahryar.pirooz@outlook.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hidden lg:block">
-                    <div class="flex flex-row space-x-4 dark:hidden">
-                        <img src="/assets/icons/github.svg" alt="icon">
-                        <img src="/assets/icons/twitter.svg" alt="icon">
-                        <img src="/assets/icons/linkedin.svg" alt="icon">
-                    </div>
-                    <div class="hidden flex-row space-x-4 dark:flex">
-                        <img src="/assets/icons/github-dark.svg" alt="icon">
-                        <img src="/assets/icons/twitter-dark.svg" alt="icon">
-                        <img src="/assets/icons/linkedin-dark.svg" alt="icon">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="w-full lg:flex-1 lg:mx-4">
-
-                <form class="flex flex-col" action="/" method="post">
-
-                    <div class="flex flex-col lg:flex-row w-full">
-                        <div class="my-2 flex flex-col flex-1">
-                            <label for="name">نام:</label>
-                            <input class="outline-0 border border-surface rounded h-14 px-2 focus:border-primary w-full"
-                                name="name" type="text" placeholder="نام شما">
-                        </div>
-
-                        <div class="my-2 flex flex-col flex-1 lg:px-4">
-                            <label for="family">نام خانوادگی:</label>
-                            <input class="outline-0 border border-surface rounded h-14 px-2 focus:border-primary w-full"
-                                name="family" type="text" placeholder="نام خانوادگی شما">
-                        </div>
-                    </div>
-
-                    <div class="my-2 flex flex-col">
-                        <label for="email">ایمیل:</label>
-                        <input class="outline-0 border border-surface rounded h-14 px-2 focus:border-primary w-full"
-                            name="email" type="email" placeholder="example@gmail.com">
-                    </div>
-
-                    <div class="my-2 flex flex-col">
-                        <label for="phone">شماره تماس:</label>
-                        <input class="outline-0 border border-surface rounded h-14 px-2 focus:border-primary w-full"
-                            name="phone" type="text" placeholder="09123456789">
-                    </div>
-
-                    <div class="my-2 flex flex-col">
-                        <label for="message">پیام:</label>
-                        <textarea
-                            class="outline-0 min-h-24 border border-surface rounded px-2 py-2 focus:border-primary w-full"
-                            name="message"></textarea>
-                    </div>
-
-                    <div>
-                        <input class="bg-primary text-nowrap text-neutral-100 rounded-md py-2 px-3 w-full text-center"
-                            type="submit" value="ارسال پیام">
-                    </div>
-
-                </form>
-                <div class="flex flex-row w-full my-8 lg:hidden gap-1">
-                    <a class="flex-1" href="emailto:shahryar.pirooz@outlook.com">
-                        <div
-                            class="border border-surface rounded-xl  px-2 py-4 shadow flex flex-row justify-center items-center select-none active:bg-primary active:text-neutral-100">
-                            <div class="flex-1">
-                                <img class="block dark:hidden" src="/assets/icons/email-outline.svg" alt="email">
-                                <img class="hidden dark:block" src="/assets/icons/email-outline-dark.svg" alt="email">
-                            </div>
-                            <span class="flex-1">ایمیل</span>
-                        </div>
-                    </a>
-                    <a class="flex-1" href="emailto:shahryar.pirooz@outlook.com">
-                        <div
-                            class="border border-surface rounded-xl  px-2 py-4 shadow flex flex-row justify-center items-center select-none active:bg-primary active:text-neutral-100">
-                            <div class="flex-1">
-                                <img class="block dark:hidden" src="/assets/icons/call-outline.svg" alt="phone">
-                                <img class="hidden dark:block" src="/assets/icons/call-outline-dark.svg" alt="phone">
-                            </div>
-                            <span class="flex-1">تماس</span>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="flex justify-center lg:hidden">
-                    <div class="flex flex-row space-x-8 dark:hidden">
-                        <img src="/assets/icons/github.svg" alt="icon">
-                        <img src="/assets/icons/twitter.svg" alt="icon">
-                        <img src="/assets/icons/linkedin.svg" alt="icon">
-                    </div>
-                    <div class="hidden flex-row space-x-8 dark:flex">
-                        <img src="/assets/icons/github-dark.svg" alt="icon">
-                        <img src="/assets/icons/twitter-dark.svg" alt="icon">
-                        <img src="/assets/icons/linkedin-dark.svg" alt="icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 
     <footer class="lg:pt-32 flex flex-col py-8 px-2 lg:p-8">
         <div class="flex flex-row justify-center items-center w-full mb-12 lg:mx-auto lg:w-1/2">
