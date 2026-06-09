@@ -22,23 +22,26 @@
                 <button id="signin" class="flex-4 bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود
                     به
                     اپلیکیشن</button>
-                <img id="theme_btn" class="cursor-pointer flex-1 max-h-6" src="/assets/icons/toggle-theme.svg" alt="toggle-theme">
+                <img id="theme_btn" class="cursor-pointer flex-1 max-h-6" src="/assets/icons/toggle-theme.svg"
+                    alt="toggle-theme">
             </div>
-            <div data-show="false" id="bg_menu" class="absolute z-10 hidden top-0 left-0 backdrop-blur-sm w-screen h-screen">
-                <div id="theme_menu"  class="flex-col rounded-lg shadow min-w-60 text-center space-y-8 absolute top-20 left-10 bg-background px-4 py-8">
-                <div><span id="theme_light" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت روشن</span></div>
-                <div><span id="theme_dark" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت خاموش</span></div>
-                <div><span id="theme_system" class="cursor-pointer w-full ">پیروی از سیستم</span></div>
-            </div>
+            <div data-show="false" id="bg_menu"
+                class="absolute z-10 hidden top-0 left-0 backdrop-blur-sm w-screen h-screen">
+                <div id="theme_menu"
+                    class="flex-col rounded-lg shadow min-w-60 text-center space-y-8 absolute top-20 left-10 bg-background px-4 py-8">
+                    <div><span id="theme_light" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت
+                            روشن</span></div>
+                    <div><span id="theme_dark" class="cursor-pointer w-full border-b border-neutral-300 pb-3">حالت
+                            خاموش</span></div>
+                    <div><span id="theme_system" class="cursor-pointer w-full ">پیروی از سیستم</span></div>
+                </div>
             </div>
         </nav>
         <nav class="flex flex-row flex-nowrap justify-between items-center lg:hidden">
             <div class="min-w-6 max-w-8">
-                <button
-                    id="mobile_menu"
+                <button id="mobile_menu"
                     class="group inline-flex w-12 h-12 text-text bg-background text-center items-center justify-center rounded transition"
-                    aria-pressed="false"
-                    data-opened="false"
+                    aria-pressed="false" data-opened="false"
                     onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
                     <span class="sr-only">Menu</span>
                     <svg class="w-6 h-6 fill-current pointer-events-none" viewBox="0 0 16 16"
@@ -57,52 +60,107 @@
             </div>
             <h1 class="font-semibold text-center w-full text-xl">کوئرا لیست</h1>
         </nav>
-         <div id="mobile_bg_menu" class="w-full h-full gird place-items-center hidden">
-                    <ul class="w-3/4  mx-auto flex flex-col shadow justify-center items-center space-y-16 bg-background rounded-lg py-8">
-                        <li class="hover:cursor-pointer text-primary"><a href="/index.html">صفخه اصلی</a></li>
-                        <li class="hover:cursor-pointer"><a href="/pages/about.html">درباره من</a></li>
-                        <li class="hover:cursor-pointer"><a href="/pages/contact.html">ارتباط با من</a></li>
-                        <li class="w-1/2 h-px bg-inverse"></li>
-                        <li id="mobile_theme_light" class="hover:cursor-pointer"><a href="#">حالت روشن</a></li>
-                        <li id="mobile_theme_dark" class="hover:cursor-pointer"><a href="#">حالت خاموش</a></li>
-                        <li id="mobile_theme_system" class="hover:cursor-pointer"><a href="#">پیروی از سیستم</a></li>
-                    </ul>
-                </div>
+        <div id="mobile_bg_menu" class="w-full h-full gird place-items-center hidden">
+            <ul
+                class="w-3/4  mx-auto flex flex-col shadow justify-center items-center space-y-16 bg-background rounded-lg py-8">
+                <li class="hover:cursor-pointer text-primary"><a href="/index.html">صفخه اصلی</a></li>
+                <li class="hover:cursor-pointer"><a href="/pages/about.html">درباره من</a></li>
+                <li class="hover:cursor-pointer"><a href="/pages/contact.html">ارتباط با من</a></li>
+                <li class="w-1/2 h-px bg-inverse"></li>
+                <li id="mobile_theme_light" class="hover:cursor-pointer"><a href="#">حالت روشن</a></li>
+                <li id="mobile_theme_dark" class="hover:cursor-pointer"><a href="#">حالت خاموش</a></li>
+                <li id="mobile_theme_system" class="hover:cursor-pointer"><a href="#">پیروی از سیستم</a></li>
+            </ul>
+        </div>
     </header>
     <main class="mx-auto container overflow-hidden">
-        <section class="pb-16 flex flex-col justify-between px-3 space-y-8 bg-linear-to-b from-surface to-background max-h-screen ">
+        <section
+            class="pb-16 flex flex-col justify-between px-3 space-y-8 bg-linear-to-b from-surface to-background max-h-screen ">
             <div class="relative flex flex-col space-y-3 min-h-40 py-14 justify-center items-center w-full">
-                 <svg class="fill-surface opacity-50  absolute -left-36 top-0" height="288" width="288" xmlns="http://www.w3.org/2000/svg">
-                     <circle r="140" cx="140" cy="140"/>
-                </svg> 
-                <svg class="fill-surface opacity-50  absolute -right-36 top-1/2" height="288" width="288" xmlns="http://www.w3.org/2000/svg">
-                <circle r="140" cx="140" cy="140"/>
-                </svg> 
-                <img class="absolute top-2 right-2 animate-pulse lg:top-10 lg:right-1/4" src="/assets/icons/star.svg" alt="star">
+                <svg class="fill-surface opacity-50  absolute -left-36 top-0" height="288" width="288"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle r="140" cx="140" cy="140" />
+                </svg>
+                <svg class="fill-surface opacity-50  absolute -right-36 top-1/2" height="288" width="288"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle r="140" cx="140" cy="140" />
+                </svg>
+                <img class="absolute top-2 right-2 animate-pulse lg:top-10 lg:right-1/4" src="/assets/icons/star.svg"
+                    alt="star">
                 <span class="z-10 text-2xl font-tanha lg:text-5xl">تمرکز رو وارد زندگیت کن </span>
-                <span class="z-10 text-3xl w-ful font-black relative after:content-[' '] after:absolute after:w-32 after:top-12 after:h-8 after:right-1/4 after:left-0 after:bg-contain after:bg-no-repeat after:bg-[url(/assets/icons/line.svg)] lg:text-7xl lg:after:w-full lg:after:top-24 lg:after:bg-center lg:after:right-10">به سمت اهدافت اوج بگیر</span>
-                <img class="absolute bottom-2 left-2 animate-pulse lg:bottom-5 lg:left-1/6" src="/assets/icons/star.svg" alt="star">
+                <span
+                    class="z-10 text-3xl w-ful font-black relative after:content-[' '] after:absolute after:w-32 after:top-12 after:h-8 after:right-1/4 after:left-0 after:bg-contain after:bg-no-repeat after:bg-[url(/assets/icons/line.svg)] lg:text-7xl lg:after:w-full lg:after:top-24 lg:after:bg-center lg:after:right-10">به
+                    سمت اهدافت اوج بگیر</span>
+                <img class="absolute bottom-2 left-2 animate-pulse lg:bottom-5 lg:left-1/6" src="/assets/icons/star.svg"
+                    alt="star">
             </div>
-            <span class="z-10 mx-auto text-center text-neutral-700 dark:text-neutral-400">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. <br class="hidden md:block">با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</span>
+            <span class="z-10 mx-auto text-center text-neutral-700 dark:text-neutral-400">زمان در یک روز برای ما محدود
+                است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. <br class="hidden md:block">با اپلیکیشن
+                کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</span>
             <div class="flex flex-row flex-nowrap w-full space-x-5 lg:w-fit lg:mx-auto">
-                <button class="z-10 flex-1 cursor-pointer bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود به اپلیکیشن</button>
-                <button class="z-10 flex-1 cursor-pointer bg-neutral-200 text-nowrap  text-primary  rounded-md py-2 px-6">درباره من</button>
+                <button
+                    class="z-10 flex-1 cursor-pointer bg-primary text-nowrap  text-neutral-100  rounded-md py-2 px-6">ورود
+                    به اپلیکیشن</button>
+                <button
+                    class="z-10 flex-1 cursor-pointer bg-neutral-200 text-nowrap  text-primary  rounded-md py-2 px-6">درباره
+                    من</button>
             </div>
             <div class="mx-auto">
                 <img class="block dark:hidden" src="assets/images/app-web-light.png" alt="web app preview">
                 <img class="hidden dark:block" src="assets/images/app-web-dark.png" alt="web app preview">
             </div>
-        </section> 
+        </section>
         <section class="py-16 flex flex-col w-full justify-center items-center text-center min-h-112.5 mt-32">
             <div class="flex flex-col space-y-3">
                 <h2 class="font-tanha text-4xl font-semibold">ویژگی‌های اپلیکیشن کوئرالیست</h2>
-                <span class="text-neutral-700 dark:text-neutral-400">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای <br class="hidden md:block"> بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.</span>
+                <span class="text-neutral-700 dark:text-neutral-400">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و
+                    جدیدترین ترندهای <br class="hidden md:block"> بازار همواره در تلاشیم تا بهترین تجربه کاربری رو
+                    براتون به ارمغان بیاریم.</span>
             </div>
             <div class="grid grid-cols-2 w-full justify-items-center mt-10 px-4 gap-4 mx-auto lg:gap-6 lg:grid-cols-4">
-                <div class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/brush.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/brush-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><h3 class="font-tanha text-lg font-bold text-nowrap">رابط کاربری جذاب</h3><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
-                <div class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/category.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/category-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><h3 class="font-tanha text-lg font-bold text-nowrap">قابلیت دسته‌بندی کارها</h3><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
-                <div class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/location-tick.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/location-tick-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><h3 class="font-tanha text-lg font-bold text-nowrap">دسترسی آسان</h3><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
-                <div class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64"><div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/user-tag.svg" alt="icon"><img class="hidden dark:block" src="/assets/icons/user-tag-dark.svg" alt="icon"></div><div class="flex flex-col justify-center items-center space-y-3"><h3 class="font-tanha text-lg font-bold text-nowrap">پشتیبانی آنلاین</h3><span class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</span></div></div>
+                <div
+                    class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64">
+                    <div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/brush.svg" alt="icon"><img
+                            class="hidden dark:block" src="/assets/icons/brush-dark.svg" alt="icon"></div>
+                    <div class="flex flex-col justify-center items-center space-y-3">
+                        <h3 class="font-tanha text-lg font-bold text-nowrap">رابط کاربری جذاب</h3><span
+                            class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته
+                            شدی این اپلیکیشن مخصوص خودته!</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64">
+                    <div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/category.svg"
+                            alt="icon"><img class="hidden dark:block" src="/assets/icons/category-dark.svg" alt="icon">
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-3">
+                        <h3 class="font-tanha text-lg font-bold text-nowrap">قابلیت دسته‌بندی کارها</h3><span
+                            class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته
+                            شدی این اپلیکیشن مخصوص خودته!</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64">
+                    <div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/location-tick.svg"
+                            alt="icon"><img class="hidden dark:block" src="/assets/icons/location-tick-dark.svg"
+                            alt="icon"></div>
+                    <div class="flex flex-col justify-center items-center space-y-3">
+                        <h3 class="font-tanha text-lg font-bold text-nowrap">دسترسی آسان</h3><span
+                            class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته
+                            شدی این اپلیکیشن مخصوص خودته!</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface rounded-lg w-48 h-48 flex flex-col flex-1 items-center justify-center text-center px-8 py-10 space-y-4 lg:h-64 lg:w-64">
+                    <div class="mb-4"><img class="block dark:hidden w-fit" src="/assets/icons/user-tag.svg"
+                            alt="icon"><img class="hidden dark:block" src="/assets/icons/user-tag-dark.svg" alt="icon">
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-3">
+                        <h3 class="font-tanha text-lg font-bold text-nowrap">پشتیبانی آنلاین</h3><span
+                            class="px-3 text-sm text-neutral-700 dark:text-neutral-400">اگه از سردرگمی و بی برنامگی خسته
+                            شدی این اپلیکیشن مخصوص خودته!</span>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="py-16 flex flex-col md:flex-row">
@@ -111,8 +169,16 @@
                     <span class="text-lg text-neutral-700 dark:text-neutral-400">اپلیکیشن اندروید و IOS</span>
                     <h2 class="font-tanha text-4xl font-bold">دانلود اپلیکیشن</h2>
                 </div>
-                <p class="text-center lg:w-3/4 md:text-justify">کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را به‌سادگی از استورهای معتبر دریافت کرده و از تمامی قابلیت‌های آن بر روی گوشی خود بهره‌مند شوند. همچنین، کاربران سیستم‌عامل اپل علاوه بر دانلود و نصب نرم‌افزار از طریق اپل‌استور، می‌توانند برای دسترسی سریع‌تر، از نسخه تحت وب آن نیز استفاده نمایند.<br>در واقع، این انعطاف‌پذیری در پلتفرم‌ها به کاربران آیفون و آیپد اجازه می‌دهد تا بدون محدودیت، در شرایط مختلف از خدمات کوئرالیست بهره ببرند. بنابراین، کاربران سیستم‌عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور، می‌توانند با مراجعه به نسخه مبتنی بر وب، تجربه‌ای مشابه و بی‌وقفه را در مرورگرهای خود تجربه کنند.</p>
-                <div class="text-primary mt-14 text-center md:text-start w-full"><a class="flex flex-row justify-center md:justify-start" href="/index.html"><span>ورود به اپلیکیشن</span><img src="/assets/icons/arrow-right.svg" alt="arrow-right"></a></div>
+                <p class="text-center lg:w-3/4 md:text-justify">کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را به‌سادگی
+                    از استورهای معتبر دریافت کرده و از تمامی قابلیت‌های آن بر روی گوشی خود بهره‌مند شوند. همچنین،
+                    کاربران سیستم‌عامل اپل علاوه بر دانلود و نصب نرم‌افزار از طریق اپل‌استور، می‌توانند برای دسترسی
+                    سریع‌تر، از نسخه تحت وب آن نیز استفاده نمایند.<br>در واقع، این انعطاف‌پذیری در پلتفرم‌ها به کاربران
+                    آیفون و آیپد اجازه می‌دهد تا بدون محدودیت، در شرایط مختلف از خدمات کوئرالیست بهره ببرند. بنابراین،
+                    کاربران سیستم‌عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور، می‌توانند با مراجعه به نسخه مبتنی بر
+                    وب، تجربه‌ای مشابه و بی‌وقفه را در مرورگرهای خود تجربه کنند.</p>
+                <div class="text-primary mt-14 text-center md:text-start w-full"><a
+                        class="flex flex-row justify-center md:justify-start" href="/index.html"><span>ورود به
+                            اپلیکیشن</span><img src="/assets/icons/arrow-right.svg" alt="arrow-right"></a></div>
             </div>
             <div class="flex-1 order-1 md:order-2">
                 <div class="hidden relative md:block">
@@ -134,111 +200,161 @@
                 </div>
                 <div class="w-fit mx-auto">
                     <img class="block dark:hidden" src="/assets/images/app-mobile-small-light.png" alt="app-mobile">
-                    <img class="hidden dark:block" src="/assets/images/app-mobile-small-dark.png" alt="app-mobile"></div>
+                    <img class="hidden dark:block" src="/assets/images/app-mobile-small-dark.png" alt="app-mobile">
+                </div>
             </div>
         </section>
         <section class="py-16 flex flex-col w-full">
             <div class="flex flex-col flex-nowrap w-full text-center space-y-4 mx-auto lg:max-w-1/3">
                 <h2 class="font-tanha text-4xl font-bold">نظرات کاربران</h2>
-                <span class="text-neutral-700 dark:text-neutral-400">بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.</span>
+                <span class="text-neutral-700 dark:text-neutral-400">بیش از یک دهه است که کوئرا لیست به مردم در سراسر
+                    جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.</span>
             </div>
-            <div id="comments" class="flex flex-row overflow-x-auto gap-6 px-3 lg:mx-auto lg:grid lg:grid-cols-3 lg:max-w-2/3">
+            <div id="comments"
+                class="flex flex-row overflow-x-auto gap-6 px-3 lg:mx-auto lg:grid lg:grid-cols-3 lg:max-w-2/3">
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user1.png" alt="users">
                         <div class="flex flex-col flex-nowrap px-4">
                             <h3 class="font-tanha font-bold">رویا ملکی</h3>
-                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار دیجی‌کالا</span>
+                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار
+                                دیجی‌کالا</span>
                         </div>
                     </div>
-                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود.
+                        استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                        کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                        ببریم.</p>
                 </div>
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user2.png" alt="users">
                         <div class="flex flex-col flex-nowrap px-4">
                             <h3 class="font-tanha font-bold">رویا ملکی</h3>
-                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار دیجی‌کالا</span>
+                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار
+                                دیجی‌کالا</span>
                         </div>
                     </div>
-                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود.
+                        استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                        کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                        ببریم.</p>
                 </div>
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user3.png" alt="users">
                         <div class="flex flex-col flex-nowrap px-4">
                             <h3 class="font-tanha font-bold">رویا ملکی</h3>
-                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار دیجی‌کالا</span>
+                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار
+                                دیجی‌کالا</span>
                         </div>
                     </div>
-                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود.
+                        استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                        کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                        ببریم.</p>
                 </div>
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user4.png" alt="users">
                         <div class="flex flex-col flex-nowrap px-4">
                             <h3 class="font-tanha font-bold">رویا ملکی</h3>
-                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار دیجی‌کالا</span>
+                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار
+                                دیجی‌کالا</span>
                         </div>
                     </div>
-                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود.
+                        استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                        کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                        ببریم.</p>
                 </div>
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user5.png" alt="users">
                         <div class="flex flex-col flex-nowrap px-4">
                             <h3 class="font-tanha font-bold">رویا ملکی</h3>
-                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار دیجی‌کالا</span>
+                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار
+                                دیجی‌کالا</span>
                         </div>
                     </div>
-                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود.
+                        استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                        کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                        ببریم.</p>
                 </div>
                 <div class="flex flex-col px-6 py-8 min-w-3xs space-y-6">
                     <div class="flex flex-row justify-center  items-center lg:justify-start">
                         <img src="/assets/images/user6.png" alt="users">
                         <div class="flex flex-col flex-nowrap px-4">
                             <h3 class="font-tanha font-bold">رویا ملکی</h3>
-                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار دیجی‌کالا</span>
+                            <span class="text-sm text-neutral-700 dark:text-neutral-400">مهندس نرم افزار
+                                دیجی‌کالا</span>
                         </div>
                     </div>
-                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                    <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود.
+                        استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                        کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                        ببریم.</p>
                 </div>
             </div>
             <div class="w-fit mx-auto flex flex-row space-x-6">
-                <div id="chv_right" class="select-none w-10 h-10 p-2.5 shadow shadow-neutral-300 cursor-pointer rounded grid place-items-center transition-all duration-300 active:scale-80">
-                    <img class="block dark:hidden" src="/assets/icons/chevron-right.svg" alt=""><img class="hidden dark:block" src="/assets/icons/chevron-right-dark.svg" alt="">
+                <div id="chv_right"
+                    class="select-none w-10 h-10 p-2.5 shadow shadow-neutral-300 cursor-pointer rounded grid place-items-center transition-all duration-300 active:scale-80">
+                    <img class="block dark:hidden" src="/assets/icons/chevron-right.svg" alt=""><img
+                        class="hidden dark:block" src="/assets/icons/chevron-right-dark.svg" alt="">
                 </div>
-            <div id="chv_left" class="select-none w-10 h-10 p-2.5 shadow shadow-neutral-300 cursor-pointer rounded grid place-items-center transition-all duration-300 active:scale-80">
-                <img class="block dark:hidden" src="/assets/icons/chevron-left.svg" alt=""><img class="hidden dark:block" src="/assets/icons/chevron-left-dark.svg" alt="">
+                <div id="chv_left"
+                    class="select-none w-10 h-10 p-2.5 shadow shadow-neutral-300 cursor-pointer rounded grid place-items-center transition-all duration-300 active:scale-80">
+                    <img class="block dark:hidden" src="/assets/icons/chevron-left.svg" alt=""><img
+                        class="hidden dark:block" src="/assets/icons/chevron-left-dark.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="lg:pt-32 flex flex-col py-8 px-2 lg:p-8">
+        <div class="flex flex-row justify-center items-center w-full mb-12 lg:mx-auto lg:w-1/2">
+            <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
+            <div class="flex-1 text-center ">کوئرا لیست</div>
+            <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
+        </div>
+        <div class="flex flex-col justify-around space-x-60 lg:px-40 lg:text-start lg:flex-row">
+            <div
+                class="flex flex-row justify-center items-center lg:justify-start lg:items-start  w-full flex-nowrap space-y-6 order-2 lg:flex-col lg:order-1">
+                <div class="flex-1 space-y-6 order-2 lg:order-1">
+                    <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden"
+                            src="/assets/icons/fax-mobile.svg" alt="fax"><img class="hidden dark:block"
+                            src="/assets/icons/fax-mobile-dark.svg" alt="fax"><a href="fax:02144445566">فکس:<br
+                                class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
+                    <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden"
+                            src="/assets/icons/call-mobile.svg" alt="phone"><img class="hidden dark:block"
+                            src="/assets/icons/call-mobile-dark.svg" alt="phone"><a href="tel:02144445566">تلفن
+                            پشتیبانی:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
+                </div>
+                <div class="flex-1 flex flex-row justify-start items-center space-x-4 order-1 lg:order-2"><img
+                        class="block dark:hidden" src="/assets/icons/map-mobile.svg" alt="location"><img
+                        class="hidden dark:block" src="/assets/icons/map-mobile-dark.svg" alt="location"><a
+                        href="https://maps.app.goo.gl/zFqVTotciXwCykYK8">آدرس دفتر مرکزی:<br class="lg:hidden"> پونک -
+                        خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</a></div>
+            </div>
+            <div class="flex flex-col flex-nowrap w-full space-y-8 order-1 lg:order-2">
+                <div class="flex flex-col flex-nowrap space-y-4">
+                    <span class="font-bold">با ما در ارتباط باش</span>
+                    <span>اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</span>
+                </div>
+                <div>
+                    <div
+                        class=" my-8 border border-neutral-400 flex flex-row justify-between w-full p-1.5 rounded-lg transition-all duration-500  focus-within:border-primary focus-within:border-2 lg:w-fit">
+                        <input class="outline-0" type="text" placeholder="ایمیل"><button
+                            class="bg-primary text-nowrap  text-neutral-100  rounded-md py-1 px-3">ارسال</button>
+                    </div>
+                </div>
             </div>
         </div>
-        </section>
-        </main>
-        <footer class="lg:pt-32 flex flex-col py-8 px-2 lg:p-8">
-            <div class="flex flex-row justify-center items-center w-full mb-12 lg:mx-auto lg:w-1/2">
-                <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
-                <div class="flex-1 text-center ">کوئرا لیست</div>
-               <div class="flex-1 h-px bg-neutral-300 lg:flex-2"></div>
-            </div>
-            <div class="flex flex-col justify-around space-x-60 lg:px-40 lg:text-start lg:flex-row">
-                <div class="flex flex-row justify-center items-center lg:justify-start lg:items-start  w-full flex-nowrap space-y-6 order-2 lg:flex-col lg:order-1">
-                    <div class="flex-1 space-y-6 order-2 lg:order-1">
-                        <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden" src="/assets/icons/fax-mobile.svg" alt="fax"><img class="hidden dark:block" src="/assets/icons/fax-mobile-dark.svg" alt="fax"><a href="fax:02144445566">فکس:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
-                        <div class="flex flex-row justify-start items-center space-x-4"><img class="block dark:hidden" src="/assets/icons/call-mobile.svg" alt="phone"><img class="hidden dark:block" src="/assets/icons/call-mobile-dark.svg" alt="phone"><a href="tel:02144445566">تلفن پشتیبانی:<br class="lg:hidden"> ۴۴۴۴۵۵۶۶ - ۰۲۱</a></div>
-                    </div>
-                    <div class="flex-1 flex flex-row justify-start items-center space-x-4 order-1 lg:order-2"><img class="block dark:hidden" src="/assets/icons/map-mobile.svg" alt="location"><img class="hidden dark:block" src="/assets/icons/map-mobile-dark.svg" alt="location"><a href="https://maps.app.goo.gl/zFqVTotciXwCykYK8">آدرس دفتر مرکزی:<br class="lg:hidden"> پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</a></div>
-                </div>
-                <div class="flex flex-col flex-nowrap w-full space-y-8 order-1 lg:order-2">
-                    <div class="flex flex-col flex-nowrap space-y-4">
-                        <span class="font-bold">با ما در ارتباط باش</span>
-                        <span>اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</span></div>
-                    <div><div class=" my-8 border border-neutral-400 flex flex-row justify-between w-full p-1.5 rounded-lg transition-all duration-500  focus-within:border-primary focus-within:border-2 lg:w-fit"><input class="outline-0" type="text" placeholder="ایمیل"><button class="bg-primary text-nowrap  text-neutral-100  rounded-md py-1 px-3">ارسال</button></div></div>
-                </div>
-            </div>
-            <div></div>
-        </footer>
-        <script src="/scripts/init.js"></script>
-        <script src="/scripts/darkmode.js"></script>
-        <script src="/scripts/mobile.js"></script>
+        <div></div>
+    </footer>
+    <script src="/scripts/init.js"></script>
+    <script src="/scripts/darkmode.js"></script>
+    <script src="/scripts/mobile.js"></script>
 </body>
+
 </html>
