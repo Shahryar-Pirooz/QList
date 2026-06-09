@@ -1,6 +1,8 @@
 # QList
 [![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Shahryar-Pirooz/QList)
 
+![Screenshot](./screenshot/Screenshot.jpg)
+
 QList is a responsive landing page for a to-do list application, "Quera List". This project is built with a focus on modern UI/UX principles, featuring a clean design, theme switching capabilities, and a mobile-first approach. The entire user interface is in Persian.
 
 ![qlist-demo](https://shahryar-pirooz.github.io/QList/)
